@@ -208,13 +208,13 @@ body{
   transition: 0.3s;
   transition-property: color;
 }
-/*
+
 @media only screen and (min-width: 768px) {
   .menu {
     display: none;
   }
 }
-*/
+
 
 
 .wrapper .main-container .sidebar-btn:hover{
