@@ -8,7 +8,11 @@
 }
 
 body{
-  background: #fff;
+  background: #444;
+}
+
+.border {
+  background-color: #444;
 }
 
 .wrapper .header{
