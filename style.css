@@ -12,6 +12,10 @@ body{
   background-color: #27272B;
 }
 
+.separate {
+    padding:5px;
+}
+
 .border {
 
   box-shadow: 5px 5px 8px #101017;
