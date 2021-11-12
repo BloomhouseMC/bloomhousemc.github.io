@@ -5,8 +5,20 @@
 <title>Bloomhouse</title>
 <link rel="icon" href="bloomhouselogo.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/dark.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script src="highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+	<head> 
+    <script src="jquery.js"></script> 
+    <script> 
+        $(function(){
+            $("#ContentToInclude").load("code.html"); 
+        });
+    </script> 
+</head>
+
 </head>
 <body>
 
@@ -42,6 +54,7 @@
     <div class="content">Content for  class "content" Goes Here
 	  <div class="like_button_container" data-commentid="1"></div>
 	  <div class="like_button_container" data-commentid="2"></div>
+		
 	  </div>
    
     <div class="menu-container"> 
@@ -53,17 +66,24 @@
       <div class="bar"></div>
       </label>
       <!--menu icon end--> 
+		
     </div>
+	  <div id="ContentToInclude"></div>
     <!--main container end--> 
+	  
   </div>
   <!--wrapper end--> 
-  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
   <!-- Load React. --> 
   <!-- Note: when deploying, replace "development.js" with "production.min.js". --> 
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
+	
   <!-- Load our React component. --> 
   <script src="like_button.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js" integrity="sha512-Pbb8o120v5/hN/a6LjF4N4Lxou+xYZ0QcVF8J6TWhBbHmctQWd8O6xTDmHpE/91OjPzCk4JRoiJsexHYg4SotQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script type="text/javascript">
           $(document).ready(function(){
               $(".menu").click(function(){
