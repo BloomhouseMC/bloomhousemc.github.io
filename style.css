@@ -197,6 +197,9 @@ body{
   height: 100vh;
   transition: 0.3s;
 }
+.wrapper .main-container .content .like_button_container{
+	color: fff;
+}
 
  .wrapper .main-container .sidebar-btn{
   color: #fff;
