@@ -1,47 +1,6 @@
 <!doctype html>
 <html>
 <head>
-    <style>
-.tooltip {
-  position: relative;
-  display: inline-block;
-    float: right;
-
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #444;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 0px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
 <meta charset="utf-8">
 <title>Untitled Document</title>
 	<link rel="stylesheet" href="style.css">
@@ -53,30 +12,30 @@
 </head>
 
 <body>
-    <div class="tooltip">
-<button onclick="myFunction()" onmouseout="outFunc()"> <i class="far fa-copy"></i>
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span></button>
-</div>
-	<div class="border" style="background-color:444;">
+    <button id="button1" onclick="CopyToClipboard('copy')" class="fas fa-copy" style="color:dimgrey; background: none; padding:1px; border: none;"></button>
+	<div class="border" style="background-color:1D1D21;">
 	<pre><code class="language-java" id="copy">public static void(){
     int number = 5;
 }
 </code></pre>
 		</div>
-    <script>
-function myFunction() {
-  var copyText = document.getElementById("copy");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-  
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: " + copyText.value;
-}
-
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
+    
+    
+    
+<script>
+function CopyToClipboard(containerid) {
+  if (document.selection) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(document.getElementById(containerid));
+    range.select().createTextRange();
+    document.execCommand("copy");
+  } else if (window.getSelection) {
+    var range = document.createRange();
+    range.selectNode(document.getElementById(containerid));
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    alert("Text has been copied, now paste in the text-area")
+  }
 }
 </script>
 </body>
