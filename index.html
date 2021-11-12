@@ -1,99 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Bloomhouse</title>
-		<link rel="icon" href="bloomhouselogo.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    </head>
-    <body>
+<head>
+<meta charset="utf-8">
+<title>Bloomhouse</title>
+<link rel="icon" href="bloomhouselogo.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
 
-        <!--wrapper start-->
-        <div class="wrapper">
-            <!--header menu start-->
-            <div class="header">
-                <div class="img">
-					<img src="bhbannerlogo.png" alt="">
-                    
-                 
-                </div>
-            </div>
-            <!--header menu end-->
-            <!--sidebar start-->
-            <div class="sidebar">
-                <div class="sidebar-menu">
-                    <center class="profile">
-                        <img src="bloomhouselogo.png" alt="">
-                        <p>BloomhouseMC</p>
-                    </center>
-                    <li class="item">
-                        <a href="#" class="menu-btn">
-                            <i class="fas fa-home"></i><span>Home</span>
-                        </a>
-                    </li>
-                    <li class="item" id="terrafabricraft">
-                        <a href="#terrafabricraft" class="menu-btn">
-                            <i class="fas fa-code"></i><span>TerraFabriCraft <i class="fas fa-chevron-down drop-down"></i></span>
-                        </a>
-                        <div class="sub-menu">
-                            <a href="#"><i class="fas fa-info-circle"></i><span>Wiki</span></a>
-                            <a href="#"><i class="fas fa-user-friends"></i><span>Contribute</span></a>
-							<a href="#"><i class="fas fa-image"></i><span>Sneak Peaks</span></a>
-                        </div>
-                    </li>
-                    <li class="item" id="bewitchedgarden">
-                        <a href="#bewitchedgarden" class="menu-btn">
-                            <i class="fas fa-code"></i><span>Bewitched Garden <i class="fas fa-chevron-down drop-down"></i></span>
-                        </a>
-                        <div class="sub-menu">
-                            <a href="#"><i class="fas fa-info-circle"></i><span>Wiki</span></a>
-                            <a href="#"><i class="fas fa-user-friends"></i><span>Contribute</span></a>
-                            <a href="#"><i class="fas fa-image"></i><span>Sneak Peaks</span></a>
-                        </div>
-                    </li>
-                   
-                    <li class="item">
-                        <a href="https://discord.com/invite/hpDv9FQJAS" class="menu-btn">
-                            <i class="fab fa-discord"></i><span>Discord</span>
-                        </a>
-                    </li>
-					<li class="item">
-                        <a href="https://github.com/BloomhouseMC" class="menu-btn">
-                            <i class="fab fa-github"></i><span>Github</span>
-                        </a>
-                    </li>
-                </div>
-            </div>
-            <!--sidebar end-->
-            <!--main container start-->
-            <div class="main-container">
-		
-			  <div class="content">Content for  class "content" Goes Here</div>
-				
-			  <div class="menu-container">
-					<!--menu icon start-->
-				<input type="checkbox" id="check">
-				<label class="menu" for="check">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</label>
-				<!--menu icon end-->
-				</div>
-			  <!--main container end-->
-        </div>
-        <!--wrapper end-->
-
-        <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menu").click(function(){
-                $(".wrapper").toggleClass("collapse");
-            });
-        });
-        </script>
-	</div>
-    </body>
+<!--wrapper start-->
+<div class="wrapper"> 
+  <!--header menu start-->
+  <div class="header">
+    <div class="img"> <img src="bhbannerlogo.png" alt=""> </div>
+  </div>
+  <!--header menu end--> 
+  <!--sidebar start-->
+  <div class="sidebar">
+    <div class="sidebar-menu">
+      <center class="profile">
+        <img src="bloomhouselogo.png" alt="">
+        <p>BloomhouseMC</p>
+      </center>
+      <li class="item"> <a href="#" class="menu-btn"> <i class="fas fa-home"></i><span>Home</span> </a> </li>
+      <li class="item" id="terrafabricraft"> <a href="#terrafabricraft" class="menu-btn"> <i class="fas fa-code"></i><span>TerraFabriCraft <i class="fas fa-chevron-down drop-down"></i></span> </a>
+        <div class="sub-menu"> <a href="#"><i class="fas fa-info-circle"></i><span>Wiki</span></a> <a href="#"><i class="fas fa-user-friends"></i><span>Contribute</span></a> <a href="#"><i class="fas fa-image"></i><span>Sneak Peaks</span></a> </div>
+      </li>
+      <li class="item" id="bewitchedgarden"> <a href="#bewitchedgarden" class="menu-btn"> <i class="fas fa-code"></i><span>Bewitched Garden <i class="fas fa-chevron-down drop-down"></i></span> </a>
+        <div class="sub-menu"> <a href="#"><i class="fas fa-info-circle"></i><span>Wiki</span></a> <a href="#"><i class="fas fa-user-friends"></i><span>Contribute</span></a> <a href="#"><i class="fas fa-image"></i><span>Sneak Peaks</span></a> </div>
+      </li>
+      <li class="item"> <a href="https://discord.com/invite/hpDv9FQJAS" class="menu-btn"> <i class="fab fa-discord"></i><span>Discord</span> </a> </li>
+      <li class="item"> <a href="https://github.com/BloomhouseMC" class="menu-btn"> <i class="fab fa-github"></i><span>Github</span> </a> </li>
+    </div>
+  </div>
+  <!--sidebar end--> 
+  <!--main container start-->
+  <div class="main-container">
+	  <div id="like_button_container"></div>
+    <div class="content">Content for  class "content" Goes Here
+	  
+	  </div>
+   
+    <div class="menu-container"> 
+      <!--menu icon start-->
+      <input type="checkbox" id="check">
+      <label class="menu" for="check">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      </label>
+      <!--menu icon end--> 
+    </div>
+    <!--main container end--> 
+  </div>
+  <!--wrapper end--> 
+  
+  <!-- Load React. --> 
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". --> 
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
+  <!-- Load our React component. --> 
+  <script src="like_button.js"></script> 
+  <script type="text/javascript">
+          $(document).ready(function(){
+              $(".menu").click(function(){
+                  $(".wrapper").toggleClass("collapse");
+              });
+          });
+          </script> 
+</div>
+</body>
 </html>
-      
