@@ -13,8 +13,11 @@ body{
 }
 
 .border {
+
+  box-shadow: 5px 5px 8px #101017;
   background: #27272B;
   background-color: #27272B;
+    
 }
 
 .wrapper .header{
