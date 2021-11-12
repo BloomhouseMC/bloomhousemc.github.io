@@ -14,7 +14,7 @@
 <body>
     <button id="button1" onclick="CopyToClipboard('copy')" class="fas fa-copy" style="color:dimgrey; background: none; padding:1px; border: none;"></button>
 	<div class="border" style="background-color:444;">
-	<pre><code class="language-java">public static final double EPSILON = 0.001;
+	<pre><code class="language-java" id="copy-code-newton-raphson">public static final double EPSILON = 0.001;
     
 public static double func(double x){
     return x * x * x - x * x + 2;
@@ -41,12 +41,12 @@ function CopyToClipboard(containerid) {
     var range = document.body.createTextRange();
     range.moveToElementText(document.getElementById(containerid));
     range.select().createTextRange();
-    document.execCommand("copy");
+    document.execCommand("copy-code-newton-raphson");
   } else if (window.getSelection) {
     var range = document.createRange();
     range.selectNode(document.getElementById(containerid));
     window.getSelection().addRange(range);
-    document.execCommand("copy");
+    document.execCommand("copy-code-newton-raphson");
   }
 }
 </script>    

@@ -14,7 +14,7 @@
 <body>
     <button id="button1" onclick="CopyToClipboard('copy')" class="fas fa-copy" style="color:dimgrey; background: none; padding:1px; border: none;"></button>
 	<div class="border" style="background-color:1D1D21;">
-	<pre><code class="language-java" id="copy">public static void(){
+	<pre><code class="language-java" id="copy-code">public static void(){
     int number = 5;
 }
 </code></pre>
@@ -28,12 +28,12 @@ function CopyToClipboard(containerid) {
     var range = document.body.createTextRange();
     range.moveToElementText(document.getElementById(containerid));
     range.select().createTextRange();
-    document.execCommand("copy");
+    document.execCommand("copy-code");
   } else if (window.getSelection) {
     var range = document.createRange();
     range.selectNode(document.getElementById(containerid));
     window.getSelection().addRange(range);
-    document.execCommand("copy");
+    document.execCommand("copy-code");
   }
 }
 </script>
